@@ -1,0 +1,25 @@
+<!--
+  Representado código de programação
+
+  <code>
+    Partes genéricas de código
+  <pre>
+    Blocos de código, pois essa tag mantém os espaços em
+    branco e recuos que eu colocar no código
+-->
+
+<code>cdsCRUD.Edit;</code>
+
+<pre>
+  <code>
+    cdsCRUD.Edit;
+    cdsCRUDT200QTDDEBITO.AsInteger   := qtdDeb;
+    cdsCRUDT200VALORDEBITO.AsFloat   := fTotalDeb;
+    cdsCRUDT200QTDCREDITO.AsInteger  := qtdCred;
+    cdsCRUDT200VALORCREDITO.AsFloat  := fTotalCred;
+    cdsCRUDT200GERACAO.AsDateTime    := FuncoesBD.DataHora(dmConexoes.conPrinc);
+    cdsCRUDT200STATUS.AsString       := '1';
+    cdsCRUD.Post;
+    cdsCRUD.ApplyUpdates(0);
+  </code>
+</pre>
