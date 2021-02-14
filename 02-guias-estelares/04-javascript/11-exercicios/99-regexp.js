@@ -1,7 +1,7 @@
-const str = "45 F";
+const str = "45.2F";
 
-const onlyNumbers = str.replace(/\D+/g, "");
+const onlyNumbers = str.replace(/[A-Za-z]+/g, "");
 console.log(onlyNumbers);
 
-const onlyLetters = str.replace(/\d+/g, "");
+const onlyLetters = str.replace(/[^A-Za-z]+/g, "");
 console.log(onlyLetters);
